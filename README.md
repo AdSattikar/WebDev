@@ -1,2 +1,2 @@
 # WebDev
-Learning Frontend WebDev
+Learning Javascript and ReactJS
