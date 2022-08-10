@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SurveyForm.css">
+</head>
+<body>
+    <img src="" class="bg">
+    <div class="head">
+        <h1 id="title"> Vaccination Survey </h1>
+        <p> Protect yourselves and others - Get Vaccinated </p>
+        <p>Please enter your details to help us out</p>
+    </div>
+        <form id="survey-elements">
+            <div class="container">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+                <label id="email-label" for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email" required><br>
+                <label id="number-label" for="phone" min="1111111111" max="9999999999">Phone</label>
+                <input type="phone" name="phone" id="number" placeholder="Enter your Phone Number" required>
+                <button class="btn">Submit</button>
+            </div>
+            <div class="form_details">
+                <select id="dropdown" name="Vaccine" required>
+                    <option disabled selected value> Select your Vaccine</option>
+                    <option value="Covishield">Covishield</option>
+                    <option value="Covaxin">Covaxin</option> 
+                    <option value="Sputnik">Sputnik</option>
+                    <option value="other">Others</option>
+                </select>
+            </div>
+            <div class="form_details">
+                <p>Select the number of doses taken</p>
+                <label>
+                    <input name="any" value="Dose1" checked type="radio">Dose1</label>
+                </label>
+                <label>
+                    <input name="any" value="Dose2"  type="radio">Dose2</label>
+                </label>
+                <label>
+                    <input name="any" value="Both"  type="radio">Both</label>
+                </label>
+            </div>
+        </form>
+    
+</body> 
+</html>
